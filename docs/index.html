@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://unpkg.com/docsify/themes/vue.css">
+</head>
+
+<body>
+  <nav>
+    <a href="#/">EN</a>
+    <a href="#/zh-cn/">中文</a>
+  </nav>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'xxx',//侧边栏标题
+      alias: { // 定义路由别名，可以更自由的定义路由规则。 支持正则
+        '/.*/_sidebar.md': '/_sidebar.md'
+      }, 
+
+      el: '#app',
+      loadSidebar: true, //加载自定义侧边栏
+      loadNavbar: true, //顶部导航
+      subMaxLevel: 3, // 生成目录的最大层级
+      maxLevel: 4, // 默认情况下会抓取文档中所有标题渲染成目录，可配置最大支持渲染的标题层级。
+      repo: '',
+      // coverpage: true, //启用封面页
+      auto2top: true, //切换页面后是否自动跳转到页面顶部
+      mergeNavbar:true, // 小屏设备下合并导航栏到侧边栏
+      routerMode: 'history',//设置路由模式。 设置为 history 之后，浏览器链接里不会出现 #
+    }
+  </script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+<!-- <script src="//unpkg.com/docsify"></script> -->
+</body>
+
+</html>
